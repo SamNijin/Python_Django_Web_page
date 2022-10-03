@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+</head>
+<body>
+    {% block content %}
+    
+    <div class="nav-bar">
+        <ul>
+            <li>
+                <a>
+                    <span>
+                        Home
+                    </span>    
+                    <i class="ri-home-line icon-align"></i>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <span>
+                        Gallery
+                    </span>
+                    <i class="ri-gallery-fill icon-align"></i>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <span>
+                        Login
+                    </span>
+                    <i class="ri-arrow-drop-down-line icon-align"></i>
+                </a>
+            <div class="drop-down">        
+                <ul class="drop-down-menu">
+                    <li>
+                        <a>
+                            Old User
+                        </a>
+                    </li>
+                    <li>
+                        <a>
+                            New User
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </li>            
+        </ul>
+    </div>
+    <div class="container-fluid"></div>
+
+    </div>
+
+    
+    {% endblock %}
+</body>
+</html>

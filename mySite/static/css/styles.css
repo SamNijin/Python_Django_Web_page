@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Nav-Bar */
+
+.nav-bar{
+    background: hsla(245, 100%, 49%, 1);
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: static;
+    width: 100%;
+}
+
+.nav-bar ul{
+    margin-top: 18px;
+    display: flex;
+    list-style: none;
+    margin-right: 85px;
+    gap: 45px;
+    color: snow;
+}
+
+.nav-bar ul li{
+    cursor: pointer;
+    padding: 10px 25px 10px 20px;
+    border-radius: 15px;
+    transition: .3s all ease-in-out;
+}
+
+.nav-bar ul li:hover{
+    background: hsla(245, 100%, 79%, 1);
+    color: black;
+}
+
+.nav-bar ul li a span{
+    padding-right: 8px;
+}
+
+.nav-bar ul li .drop-down{
+    position: absolute;
+    z-index: -1;
+}
+
+.nav-bar ul li .drop-down ul{
+    display: none;
+}
+
+.nav-bar ul li:hover .drop-down{
+    display: flex;
+    top: 3.8%;
+    flex-direction: column;
+}
+
+.nav-bar ul li:hover .drop-down ul{
+    display: flex;
+    flex-direction: column;
+    background: hsla(245, 100%, 29%, 1);
+    gap: 0;
+    margin-left: -20px;
+    width: 140px;
+    padding-left: 0;
+    padding-right: 0;
+    /* padding:15px; */
+    border-radius: 10px;
+}
+
+.nav-bar ul li:hover .drop-down ul li{
+    width: 100%;
+    text-align: center;
+}
+
+.nav-bar ul li:hover .drop-down ul li{
+    padding-left: 0;
+    padding: 15px 25px;
+}
+
+.icon-align{
+    position: absolute;
+}
+
+.drop-down ul li:hover{
+    background: hsla(245, 100%, 85%, 1);
+    border-radius: 0;
+}
